@@ -26,9 +26,13 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="Scope.script" />
-    <ScriptCode Include="Scope.script.cs">
-      <DependentUpon>Scope.script</DependentUpon>
+    <Script Include="LinearRegression.script" />
+    <Script Include="TransformToBinaryML.script" />
+    <ScriptCode Include="LinearRegression.script.cs">
+      <DependentUpon>LinearRegression.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="TransformToBinaryML.script.cs">
+      <DependentUpon>TransformToBinaryML.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
